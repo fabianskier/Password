@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     let statusView = PasswordStatusView()
     let confirmPasswordTextField = PasswordTextField(placeHolderText: "Re-enter new password")
     let resetButton = UIButton(type: .system)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
@@ -29,6 +29,7 @@ extension ViewController {
         stackView.spacing = 20
         
         newPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
+        newPasswordTextField.delegate = self
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.layer.cornerRadius = 5
@@ -40,7 +41,7 @@ extension ViewController {
         resetButton.configuration = .filled()
         resetButton.setTitle("Reset password", for: [])
         // resetButton.addTarget(self, action: #selector(resetPasswordButtonTapped), for: .primaryActionTriggered)
-
+        
     }
     
     func layout() {
@@ -59,3 +60,11 @@ extension ViewController {
     }
 }
 
+// MARK: PasswordTextFieldDelegate
+extension ViewController: PasswordTextFieldDelegate {
+    func editingChanged(_ sender: PasswordTextField) {
+        if sender === newPasswordTextField {
+            statusView.updateDisplay(sender.textField.text ?? "")
+        }
+    }
+}

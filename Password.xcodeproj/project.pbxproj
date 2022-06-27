@@ -10,6 +10,7 @@
 		072B32392866C56400AE5EFC /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B32382866C56400AE5EFC /* PasswordCriteriaView.swift */; };
 		072B323B2868125900AE5EFC /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B323A2868125900AE5EFC /* PasswordStatusView.swift */; };
 		072B325D2868F62A00AE5EFC /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B325C2868F62A00AE5EFC /* PasswordCriteria.swift */; };
+		072B32602869534000AE5EFC /* UIResponder+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072B325F2869534000AE5EFC /* UIResponder+Utils.swift */; };
 		073C2CC828652335007F5330 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C2CC728652335007F5330 /* AppDelegate.swift */; };
 		073C2CCC28652335007F5330 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C2CCB28652335007F5330 /* ViewController.swift */; };
 		073C2CD128652335007F5330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 073C2CD028652335007F5330 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		072B32382866C56400AE5EFC /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
 		072B323A2868125900AE5EFC /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
 		072B325C2868F62A00AE5EFC /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
+		072B325F2869534000AE5EFC /* UIResponder+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Utils.swift"; sourceTree = "<group>"; };
 		073C2CC428652335007F5330 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073C2CC728652335007F5330 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		073C2CCB28652335007F5330 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 			path = PasswordStatusView;
 			sourceTree = "<group>";
 		};
+		072B325E2869532B00AE5EFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				072B325F2869534000AE5EFC /* UIResponder+Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		073C2CBB28652334007F5330 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		073C2CC628652335007F5330 /* Password */ = {
 			isa = PBXGroup;
 			children = (
+				072B325E2869532B00AE5EFC /* Utils */,
 				073C2CDB286523CD007F5330 /* Files */,
 				073C2CC728652335007F5330 /* AppDelegate.swift */,
 				073C2CCB28652335007F5330 /* ViewController.swift */,
@@ -160,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073C2CCC28652335007F5330 /* ViewController.swift in Sources */,
+				072B32602869534000AE5EFC /* UIResponder+Utils.swift in Sources */,
 				072B325D2868F62A00AE5EFC /* PasswordCriteria.swift in Sources */,
 				073C2CC828652335007F5330 /* AppDelegate.swift in Sources */,
 				072B32392866C56400AE5EFC /* PasswordCriteriaView.swift in Sources */,
